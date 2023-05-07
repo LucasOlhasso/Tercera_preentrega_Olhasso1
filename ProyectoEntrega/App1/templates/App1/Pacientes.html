@@ -1,0 +1,13 @@
+<!--Las tres líneas de abajo con para heredar de padre las configuraciones que no cambian -->
+{% extends "App1/padre.html" %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+
+    <!--Aquí va lo que cambia, y lo asociado a está vista :) -->
+    <h1>Pacientes....</h1>
+    <p>Acá va la info de los pacientes</p>
+
+
+{% endblock %}
