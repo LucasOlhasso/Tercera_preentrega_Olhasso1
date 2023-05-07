@@ -2,12 +2,12 @@ from django.db import models
 
 # Estos son los modelos.
 class Pacientes(models.Model):
-    nombre = models.CharField(max_length=30)
+    nombre= models.CharField(max_length=30)
     apellido= models.CharField(max_length=30)
     dni= models.IntegerField()
 
 class Profesional(models.Model):
-    nombre = models.CharField(max_length=30)
+    nombre= models.CharField(max_length=30)
     apellido= models.CharField(max_length=30)
     email= models.EmailField()
     profesion= models.CharField(max_length=30)

@@ -7,10 +7,14 @@
     <title>Formulario - Agregar Curso</title>
 </head>
 <body>
-    <form action="/cursoFormulario/"    method="post"> {% csrf_token %}
-        <p> Curso: <input type = "text" name="nombre">
-        <p> Camada: <input type = "text" name="curso">
-        <input type = "submit" value="Enviar">
-     </form>   
+     <p> Estamos buscando el: {{pacientes}}</p>
+     {% if pacientes %} 
+     <ul>
+     {% for pacientes in paciente %} 
+         <li>{{paciente.nombre}}</li>
+         <li>{{paciente.apellido}}</li>
+     {% endfor %}
+     </ul>
+     {% endif %}
 </body>
 </html>
