@@ -11,8 +11,9 @@
      {% if pacientes %} 
      <ul>
      {% for pacientes in paciente %} 
-         <li>{{paciente.nombre}}</li>
-         <li>{{paciente.apellido}}</li>
+         <li>{{pacientes.nombre}}</li>
+         <li>{{pacientes.apellido}}</li>
+         <li>{{pacientes.dni}}</li>
      {% endfor %}
      </ul>
      {% endif %}

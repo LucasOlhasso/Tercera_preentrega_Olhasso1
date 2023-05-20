@@ -1,4 +1,5 @@
 from django import forms
+
  
 class PacientesFormulario(forms.Form):
     id= forms.IntegerField()
@@ -8,10 +9,10 @@ class PacientesFormulario(forms.Form):
 
 class ProfesionalFormulario(forms.Form):
     id= forms.IntegerField()
-    nombre= forms.CharField(max_length=30)
-    apellido= forms.CharField(max_length=30)
-    email= forms.EmailField()
-    profesion= forms.CharField(max_length=30)
+    nombre = forms.CharField()
+    apellido = forms.CharField()
+    mail = forms.EmailField()
+    profesion = forms.CharField()
 
 class TurnosFormulario(forms.Form):
     id= forms.IntegerField()
@@ -19,3 +20,4 @@ class TurnosFormulario(forms.Form):
     nombreprofesional= forms.CharField(max_length=30)
     fechaturno= forms.DateField()
     turnovigente= forms.BooleanField()  
+    
